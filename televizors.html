@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml"
+
+>
+<head>
+    <meta charset="utf-8" />
+    <title>Телевизоры</title>
+
+    <link rel="stylesheet" href="style.css   ">
+
+   <script src="data.json"></script>
+</head>
+<body>
+<main class="main">
+    <header class="main-header">
+        <ul class="main-header-list">
+            <li class="main-header-list__item"><a class="main-header-list__item-link" href="index.html">Главная</a></li>
+            <li сlass="main-header-list__item"><a class="main-header-list__item-link" href="smartfons.html">Смартфоны</a></li>
+            <li сlass="main-header-list__item"><a class="main-header-list__item-link" href="televizors.html">Телевизоры</a></li>
+            <li сlass="main-header-list__item"><a class="main-header-list__item-link" href="notebook.html">Ноутбуки</a></li>
+            <li сlass="main-header__switch">		<input type="checkbox" id="background" onchange="checkbox()" ><label  class="main-header-list-item__label" for="background">Сменить фон</label>
+            </li>
+        </ul>
+    </header>
+    <h2 id="top"></h2>
+    <div class="main-content">
+    </div>
+    <footer class="main-footer">
+        <ul id="pagination"></ul>
+
+        <div class="form-popup" id="myForm">
+            <form action="index.html" class="form-container">
+                <h1>Подписаться</h1>
+                <label for="number"><b>Введите количество товара</b></label>
+                <input type="number" min="0" placeholder="Введите число" name="number" required id="number">
+                <div class="custom-radios">
+                    <div>
+                        <input type="radio" id="color-1" name="color" value="color-1" checked>
+                        <label for="color-1">
+      <span>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+      </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" id="color-2" name="color" value="color-2">
+                        <label for="color-2">
+      <span>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+      </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="color-3" name="color" value="color-3">
+                        <label for="color-3">
+      <span>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+      </span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="color-4" name="color" value="color-4">
+                        <label for="color-4">
+      <span>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
+      </span>
+                        </label>
+                    </div>
+                </div>
+                <p class="main-form__text-about-me">Введите коментарий</p>
+                <textarea name="" id="main-form__textarea" placeholder="Введите коментарй..." class="main-form__textarea" cols="30" rows="10" maxlength="2000"></textarea>
+                <button type="submit" class="btn" onclick="buyGoogs()">Купить</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+            </form>
+        </div>
+        <ul class="main-footer-list">
+            <li class="main-footer-list__item"><a class="main-footer-list__item-link" href="index.html">Главная</a></li>
+            <li сlass="main-footer-list__item"><a class="main-footer-list__item-link" href="smartfons.html">Смартфоны</a></li>
+            <li сlass="main-footer-list__item"><a class="main-footer-list__item-link" href="televizors.html">Телевизоры</a></li>
+            <li сlass="main-footer-list__item"><a class="main-footer-list__item-link" href="notebook.html">Ноутбуки</a></li>
+            <li сlass="main-footer-list__item"> <a class="main-footer-top" href="#top">Навверх</a></li>
+        </ul>
+    </footer>
+</main>
+<script src="televizors.js"></script>
+
+
+
+</body>
+</html>
